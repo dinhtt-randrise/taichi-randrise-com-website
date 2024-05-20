@@ -120,7 +120,6 @@ body {
 var PAGE_WIDTH = 640;	
 var PAGE_HEIGHT = 0;
 $(document).ready(function() {
-  alert($(window).width() + '');
   PAGE_HEIGHT = $(window).height() - 35;
   $(window).resize(function() {
 	resize();
@@ -141,7 +140,7 @@ function resize() {
   $('#yo-footer').width(sw - 5);
   $('#yo-query-asker').width(sw - 20);
   $('#yo-query-asker .yo-query').width(sw - 20);
-  $('iframe').width(sw - 25);
+  $('iframe').width(sw - 10);
 }
 
 	</script>
