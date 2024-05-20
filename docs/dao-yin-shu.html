@@ -130,7 +130,7 @@ $(document).ready(function() {
 function resize() {
   var sw = $(window).width();
   if (sw >= PAGE_WIDTH) {
-	return;
+	sw = PAGE_WIDTH
   }
   $('#yo-page').width(sw - 5);
   $('#yo-text').width(sw - 5);
