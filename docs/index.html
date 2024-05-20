@@ -120,6 +120,7 @@ body {
 var PAGE_WIDTH = 640;	
 var PAGE_HEIGHT = 0;
 $(document).ready(function() {
+  alert($(window).width() + '');
   PAGE_HEIGHT = $(window).height() - 35;
   $(window).resize(function() {
 	resize();
