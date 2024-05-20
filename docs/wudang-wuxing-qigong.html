@@ -1,0 +1,290 @@
+<html>
+<head>
+	<title>Wudang Wuxing (Five Animals) Qigong | Tai Chi @ randrise.com</title>
+	<script src="./jquery.js"></script>
+	<meta name="keywords" content="taichi, wudang wuxing qigong, five animals qigong" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="icon" href="http://dinhtt.randrise.com/favicon.png" />
+	<style>
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#yo-page {
+  white-space: pre-wrap;
+  font-family: monospace;
+  width: 640px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px auto;
+  background:url('http://dinhtt.randrise.com/division.png') repeat;
+  border: solid 1px gainsboro; 
+  border-radius: 10px;
+}
+#yo-text {
+  white-space: pre-wrap;
+  font-family: monospace;
+  width: 640px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px auto;
+  background:url('http://dinhtt.randrise.com/division.png') repeat;
+  border: solid 1px gainsboro; 
+  border-radius: 10px;
+}
+#yo-image, #yo-youtube {
+  white-space: pre-wrap;
+  font-family: monospace;
+  width: 640px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px auto;
+  overflow: scroll;
+  background:url('http://dinhtt.randrise.com/division.png') repeat;
+  border: solid 1px gainsboro; 
+  border-radius: 10px;
+}
+#yo-toolbar {
+  width: 640px;
+  margin: 10px auto;
+  text-align: center;
+  font-family: nonospace;
+  font-size: 12px;
+}
+#yo-footer {
+  width: 640px;
+  margin: 10px auto;
+  text-align: center;
+  font-family: nonospace;
+  font-size: 12px;
+  color: grey;
+}
+#yo-footer a {
+  color: grey;
+}
+#yo-query-asker {
+  border: solid 1px gainsboro; 
+  border-radius: 10px;
+  padding: 5px;
+  width: 400px;
+  height: 300px;
+  margin: 80px auto;  
+  background:url('http://dinhtt.randrise.com/division.png') repeat;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);  
+}
+#yo-query-asker .yo-query {
+  width: 400px;
+  height: 250px;
+  border: solid 1px green; 
+  border-radius: 10px 10px 0px 0px;  
+}
+#yo-query-asker .yo-button {
+	width: 100px;
+	border: solid 1px green;
+	border-left: solid 5px green;
+	background: white;
+	border-radius: 5px 0px 5px 0px;
+	cursor: pointer;
+	cursor: hand;
+}
+#yo-page .yo-active-item {
+	color: #d9b80b !important;
+	font-weight: bold !important;
+}
+#yo-page .yo-paper-item {
+	color: black !important;
+}
+#yo-page .yo-paper-item img {
+    -webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
+    opacity: .3;
+}
+#yo-page .yo-active-item img {
+    -webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
+    opacity: .3;
+}
+.yo-paper-image img {
+    -webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%) !important;
+    opacity: .3 !important;
+}
+	</style>
+	<script>
+var PAGE_WIDTH = 640;	
+var PAGE_HEIGHT = 0;
+$(document).ready(function() {
+  PAGE_HEIGHT = $(window).height() - 35;
+  $(window).resize(function() {
+	resize();
+  });
+  resize();
+});
+
+function resize() {
+  var sw = $(window).width();
+  if (sw >= PAGE_WIDTH) {
+	return;
+  }
+  $('#yo-page').width(sw - 5);
+  $('#yo-text').width(sw - 5);
+  $('#yo-image').width(sw - 5);
+  $('#yo-youtube').width(sw - 5);
+  $('#yo-toolbar').width(sw - 5);
+  $('#yo-footer').width(sw - 5);
+  $('#yo-query-asker').width(sw - 20);
+  $('#yo-query-asker .yo-query').width(sw - 20);
+  $('iframe').width(sw - 10);
+}
+
+	</script>
+</head>
+<body>
+  <div id="yo-toolbar">
+    <div style="position: absolute">
+	  <div style="position: absolute; top: 2px; left: -5px">
+	    <img src="http://dinhtt.randrise.com/icon.png" style="width: 36px; height: 36px; border: none; border-radius: 50%;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08); cursor: pointer; cursor: hand;" />
+	  </div>
+	  <div style="position: absolute; top: -2px; left: 25px">
+	     <img id="yo-loading" src="http://dinhtt.randrise.com/loading.gif" style="display: none;width: 48px; height: 48px;" />
+	  </div>
+	</div>
+	<div class="bar">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#" onclick="location='./index.html';">Tai Chi</a> &nbsp; <span style="color: pink; font-size: 12px;">&hearts;</span> &nbsp; <a href="#" onclick="location='./dao-yin-shu.html';">Dao Yin Shu</a>  | <a href="#" onclick="location='./wudang-wuxing-qigong.html';">Wudang Wuxing Qigong</a> | <a href="#" onclick="location='./ba-duan-jin.html';">Ba Duan Jin</a>
+	</div>
+  </div>
+  <div style="height: 1px; left:0px; right:0px; position: fixed; top: 0px;">
+  <div id="yo-query-asker" style="display: none">
+	<div><textarea class="yo-query"></textarea></div>
+	<input type="hidden" class="yo-url" />
+	<div style="text-align:center; margin-top: 10px"><button class="yo-button" onclick="doQuery()">OK</button>&nbsp;<button class="yo-button" onclick="cancelQuery()">Cancel</button></div>
+  </div>
+  </div>
+  <div id="yo-page"><div class="yo-entry" style="white-space: pre-wrap">
+   _        _      _     _
+  | |      (_)    | |   (_)
+  | |_ __ _ _  ___| |__  _
+  | __/ _` | |/ __| '_ \| |
+  | || (_| | | (__| | | | |
+   \__\__,_|_|\___|_| |_|_| @ randrise.com
+--------------------------------------------
+    Wudang Wuxing (Five Animals) Qigong
+--------------------------------------------
+
+
+============================================
+                ABOUT
+  ---------------------------------------
+
+Wudang Wuxing (Five Animals) Qigong is an ancient Taoist 
+exercise designed to improve one's health and longevity. As 
+the name implies, the movements of this exercise are based on 
+the movements of five animals; the dragon, the tiger, the 
+leopard, the snake, and the crane. Each animal movement 
+improves the function of a specific internal organ. The Dragon 
+improves the Kidneys, the Tiger improves the Lungs, the Leopard 
+improves the Liver, the Snake improves the Spleen, and the Crane 
+improves the Heart (Yin Organs).
+  
+Through dedicated practice, Wudang Five Animals Qigong has the 
+capacity to bring balance back to one's internal organ system. 
+When the internal organs are in balance, the body is able to 
+work at its optimum efficiency, thus improving the overall 
+health and longevity of the practitioner.
+
+In addition to bringing harmony back to the internal organs, 
+Wudang Five Animals Qigong also opens up the joints, lengthens 
+the tendons, and strengthens the muscles. Furthermore, this 
+ancient exercise improves the functions of the respiratory and 
+circulatory systems as well; this not only allows the body to 
+deliver fresh, oxygen-rich blood to all the extremities of the 
+body but it is also assists with the elimination of deadly 
+toxins. The overall function of Wudang Five Animals Qigong is 
+to the body soft and supple, like that of a child. If practiced 
+regularly, this exercise can literally reverse the aging process 
+so that one can enjoy the benefits of strong and healthy body 
+well into their years.
+
+
+============================================
+              ALL MOVEMENTS
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/msSNBEsmDko' frameborder='0' allowfullscreen></iframe></div>
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/cjA8137PTVQ' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+============================================
+         1. The Opening Move
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/bArMPmQ0m1g' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+============================================
+2. Dragon - Element: Water, Target Organ: Kidney
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/9qb9kFJGl2o' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+============================================
+3. Tiger - Element: Metal, Target Organ: Lungs
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/JZrIXgNbfiE' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+============================================
+4. Leopard - Element: Wood, Target Organ: Liver
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/zyTKMERfKq4' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+============================================
+5. Snake - Element: Earth, Target Organ: Spleen
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/hnyFYbWjMk8' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+============================================
+6. Crane - Element: Fire, Target Organ: Heart
+  ---------------------------------------
+</div>
+<div class="yo-entry"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/puyma-crG5w' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<div class="yo-entry" style="white-space: pre-wrap">
+
+</div> 
+  </div>
+  <div id="yo-text" style="display: none;"></div>
+  <div id="yo-image" style="display: none;"></div>
+  <div id="yo-youtube" style="display: none;">
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe id="yo-youtube-frame" src='' frameborder='0' allowfullscreen></iframe></div>
+  </div>
+  <div id="yo-footer">Made with <span style="color: pink; font-size: 16px;">&hearts;</span> by <a target="_blank" href="http://dinhtt.randrise.com">dinhtt @ randrise.com</a></div>
+  
+</body>
+</html>
